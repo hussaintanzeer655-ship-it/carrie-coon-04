@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Contact Hub</title>
+  <link rel='stylesheet' href='styles.css'>
+</head>
+<body>
+  <header class='site-header'>
+    <div class='brand'>Carrie Coon</div>
+  </header>
+  <section id='contact' class='panel'>
+    <h2>Contact</h2>
+    <form id='cf' onsubmit='return submitForm(event)'>
+      <label>Name<input id='name4' required /></label>
+      <label>Email<input id='email4' type='email' required /></label>
+      <label>Message<textarea id='msg4' required></textarea></label>
+      <button type='submit'>Send</button>
+      <div id='status' aria-live='polite' style='height:1.2em;margin-top:6px;color:#9be2a5'></div>
+    </form>
+  </section>
+  <script src='script.js'></script>
+</body>
+</html>
